@@ -101,7 +101,7 @@ if __name__ == '__main__':
         time.sleep(1)
         if (len(sys.argv) not in [2, 3, 4]):
             console.print("[!!} FATAL: MISSING SYSTEM ARGUMENTS!!\n[!!} Aborting!", style=danger_style)
-            console.print("\n[-] Tip: Run with -h ", style='bold green underline')
+            console.print("\n[-] Tip: Run 'python3 Solver.py -h' ", style='bold green underline')
             exit()
 
 
@@ -129,7 +129,7 @@ if __name__ == '__main__':
         elif (len(sys.argv) == 4):
             if (sys.argv[3] != '-f'):
                 console.print("[!!] FATAL: INVALID ARGUMENT\n[!!] Aborting! ", style=danger_style)
-                console.print("[-] Tip: Run with -h ", style='bold green underline')
+                console.print("[-] Tip: Run 'python3 Solver.py -h' ", style='bold green underline')
                 exit()
             flagf = 0
             gridFile = sys.argv[1]
@@ -146,7 +146,7 @@ if __name__ == '__main__':
                     g = copy.deepcopy(grid)
                 else:
                     console.print("[!!] FATAL: THE GRID FILE IS INVALID\n[!!] Aborting! ", style=danger_style)
-                    console.print("[-] Tip: Run with -h ", style='bold green underline')
+                    console.print("[-] Tip: Run 'python3 Solver.py -h' ", style='bold green underline')
 
                     exit()
             wordfile = sys.argv[2]
@@ -161,7 +161,7 @@ if __name__ == '__main__':
                 if (lw > n):
                     console.print("[!!] FATAL: THE WORD LENGTH IS LARGER THAN THE GRID\n[!!] Aborting!",
                                   style=danger_style)
-                    console.print("[-] Tip: Run with -h ", style='bold green underline')
+                    console.print("[-] Tip: Run 'python3 Solver.py -h' ", style='bold green underline')
 
                     exit()
                 words.update(word)
@@ -182,7 +182,7 @@ if __name__ == '__main__':
                     g = copy.deepcopy(grid)
                 else:
                     console.print("[!!] FATAL: THE GRID FILE IS INVALID\n[!!] Aborting! ", style=danger_style)
-                    console.print("[-] Tip: Run with -h ", style='bold green underline')
+                    console.print("[-] Tip: Run 'python3 Solver.py -h' ", style='bold green underline')
 
                     exit()
             time.sleep(.5)
@@ -198,7 +198,7 @@ if __name__ == '__main__':
                 if (lw > n):
                     console.print("[!!] FATAL: THE WORD LENGTH IS LARGER THAN THE GRID\n[!!] Aborting! ",
                                   style=danger_style)
-                    console.print("[-] Tip: Run with -h ", style='bold green underline')
+                    console.print("[-] Tip: Run 'python3 Solver.py -h' ", style='bold green underline')
 
                     exit()
                 words.update(word)
