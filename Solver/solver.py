@@ -90,7 +90,7 @@ if __name__ == '__main__':
     console.clear()
     ascii_banner = pyfiglet.figlet_format("WordSearchSolver", font='slant', width=110)
     termcolor.cprint(ascii_banner, 'cyan')
-    console.print("[magenta underline]Made by:[/magenta underline] Janesh    Akash    Ayushi    Anujna",
+    console.print("[magenta underline]Made by:[/magenta underline] Janesh",
                   style='bold green')
     print()
     console.rule("[bold blue]STARTING")
