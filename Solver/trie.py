@@ -1,4 +1,3 @@
-# noinspection PyShadowingNames
 class Trie:
     def __init__(self, is_end=False):
         self.children = {}
